@@ -1,0 +1,44 @@
+title: Citrus Japonica's Blog
+description: Citrus Japonica's Blog
+
+url: https://citrus-japonica.github.io
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 10
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: Articles (EN)
+   url: /articles
+ - title: Articles (KO)
+   url: /articles-ko
+ - title: Categories
+   url: /categories
+ - title: About
+   url: /about
+# - title: Donate
+#   url: /donate
+
+social:
+   github: citrus-japonica
+   linkedin: in/kkh913
+   facebook: jindoleeya
+   email: kanghee@bluetilelab.com
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      comments: false
+
+# google_analytics: "UA-89960542-1"
+
+# development configurations
+host: 0.0.0.0
