@@ -43,14 +43,37 @@ OpenCV, libtorch, OpenVINO
 
 # Working Experience
 
-## Software Development
+## Machine Vision Application Development
+(주) 블루타일랩 | 2022 - Current
+
+Qt C++, C/C++, OpenCV C++, libtorch C++, OpenVINO C++, Various Camera SDK C++
+
+머신비전 어플리케이션 개발 목표는 생산 라인 상의 검사 대상을 고해상도 카메라로 촬영하고, 컴퓨터비전 기법을 이용하여 획득한 영상 내 검사 대상을 찾아내거나 검사 대상의 결함을 검출하는 것입니다. 
+현재 저는 회사 내에서 디스플레이 패널, FMM 인바 및 유리, 2차 전지 전극 등 다양한 소재에 대한 비전 SW 개발을 수행하고 있습니다. 
+UI 개발 프레임워크롤 Qt C++ 를 사용하고, 머신비전을 위해 비전 라이브러리 (OpenCV), 머신러닝 라이브러리 (libtorch, OpenVINO), 다양한 카메라 라이브러리 등을 사용하고 있습니다.
+
+## Healthcare Mobile Application Development
+(주) 네오드림스 | 2021
+
+- Java for Android
+- Objective C, Swift, and SwiftUI for iOS
+
+본 프로젝트는 웹앱 어플리케이션을 구현하는 것이 목표입니다. 개발 앱은 HTTP 서버와 통신하여 내장 웹 브라우저에 웹화면을 표시하고, REST API 를 이용하여 모바일 기기로 수집한 건강데이터를 전송합니다. 개발 참여 기간은 2022-06-01~2022-12-31 약 7개월입니다. 
+
+### Android
+건강데이터 전송 파트만을 담당하였습니다. REST API 통신을 위해 Retrofit2 를 이용하였습니다. 그리고 삼성 안드로이드 폰 대상으로 삼성헬스 앱의 데이터를 수집하기 위해 삼성헬스 SDK API 를 이용하였습니다. 
+
+### iOS
+모든 개발 파트를 담당하였습니다. REST API 통신을 위해 Alamofire 를 이용하였습니다. 그리고 비동기적으로 수집되는 건강앱의 데이터들을 병합하기 위해 RxSwift 를 사용하였습니다. 또한 사용자의 건강보험공단 데이터를 수집하기 위해 라온시큐어의 인증 API, 쿠콘의 스크랩 API 를 사용하였습니다.
+
+## Air Traffic Controller Display Console Development
 (주) 네오드림스 | 2018 - 2019
 
 Qt C++, C/C++, Linux Network
 
 본 프로젝트는 약 2년의 개발 기간에 걸쳐 항공관제용 관제사 현시 콘솔을 모의하기 위한 소프트웨어를 구현하는 것이 목표입니다. 해당 소프트웨어는 표준화된 항공정보, 항적, 비행계획의 현시 등을 주된 기능으로 하며, 주관기관에서 제시한 편의 기능, 확장기능 등의 추가 요구사항을 포함하고 있습니다. 개발 환경은 CentOS 리눅스 운영체제이며, GUI 구현 및 주관기관의 라이브러리와의 호환성을 위하여 사용언어는 Qt C++을 사용하였습니다. 저는 기능 요구사항 1차년도 32개 중 10개, 2차년도 29개 중 7개 총 28%의 참여율을 가졌습니다. 1차년도 참여 기간은 2018-10-22~2018-11-30 약 1개월이며, 2차년도 참여 기간은 2019-07-09~2019-10-30 약 3개월입니다.
 
-## Firmware Development
+## Bluetooth Firmware Development
 (주) 미로 | 2017 - 2017
 
 C, TI BLE(Bluetooth Low Energy) Stack
