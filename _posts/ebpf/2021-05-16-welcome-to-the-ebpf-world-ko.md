@@ -32,7 +32,7 @@ XDP 는 리눅스 네트워크 스택보다 더 낮은 네트워크 드라이버
 [DPDK](https://www.dpdk.org/) (Data Plane Development Kit) 는 eBPF/XDP 와는 달리 소위 ‘kernel bypass’ 를 통해 원하는 목적을 달성하기 위한 기술입니다. 상당 부분을 유저 영역에서 처리하게 되면서 유저-커널 영역 간 컨텍스트 스위칭 빈도수를 줄일 수 있습니다. 다만 오랜 세월동안 다져진 커널의 안정된 프로토콜 스택, 라우팅 정보 그리고 그것을 이용하는 도구를 모두 사용할 수 없기에 이것을 모두 구현해야 합니다. 반면 eBPF/XDP는 커널의 모든 기능을 사용하면서 원하는 기능의 프로그래밍이 가능합니다. 그러나 이것이 무조건 매력적인 방향으로만 동작하지 않는다는 것을 유념하시기 바랍니다. 시스템과 맞닿은 커널 영역에서 동작한다는 것은 그만큼 [보안에 더 많은 주의를 요구](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=BPF) 한다는 것입니다. 그리고 논쟁의 여지가 있으나 eBPF/XDP 가 언제나 뛰어난 성능을 보이는 것이 아닙니다. [[1](https://pchaigno.github.io/ebpf/2020/09/29/bpf-isnt-just-about-speed.html),[2](https://kinvolk.io/blog/2020/09/performance-benchmark-analysis-of-egress-filtering-on-linux/)] XDP 논문의 테스트 결과 모든 부분에서 DPDK 보다 낮은 성능을 보이고 있음을 확인할 수 있습니다. 비록 DPDK 보다 평균적으로 낮은 CPU 점유율을 가지고 있지만 DPDK 처럼 [CPU 100% 을 사용해야 최대 처리량을 달성](https://dl.acm.org/doi/10.1145/3281411.3281443) 할 수 있습니다. eBPF/XDP 진영에서는 이 performance gap 을 bridge 하기 위해서 많은 노력을 기울이고 있습니다. 저는 Smart NIC + XDP offload 가 DPDK의 성능을 능가할 수 있게 할 key 라고 생각합니다.
 
 # Wrap Up
-다음 포스트 eBPF/XDP (2) Samples on Virtual Network 에서는 eBPF/XDP 커뮤니터 진영에서 bible로 여기고 있는 [BPF and XDP Reference Guide](https://docs.cilium.io/en/stable/bpf/) 의 샘플 코드를 ‘직접’ 실행하고 분석하여 eBPF/XDP를 체득하도록 하겠습니다.
+다음 포스트 [eBPF/XDP (2) Samples on Virtual Network](/blog/how-to-run-samples-on-virtual-network-ko/) 에서는 eBPF/XDP 커뮤니터 진영에서 bible로 여기고 있는 [BPF and XDP Reference Guide](https://docs.cilium.io/en/stable/bpf/) 의 샘플 코드를 ‘직접’ 실행하고 분석하여 eBPF/XDP를 체득하도록 하겠습니다.
 
 eBPF/XDP 에 대한 설명은 책 한 권에 써야 할 정도로 방대합니다. 따라서 부족한 설명은 추후 지속 업데이트할 예정입니다.
 
